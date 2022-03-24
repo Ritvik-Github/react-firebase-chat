@@ -1,5 +1,5 @@
 body {
-  background-color: #282c34;
+  background-color: #1d2431;
 }
 
 .App {
@@ -9,7 +9,7 @@ body {
 }
 
 .App header {
-  background-color: #181717;
+  background-color: #191c2c;
   height: 10vh;
   min-height: 50px;
   color: white;

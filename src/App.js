@@ -10,7 +10,12 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 firebase.initializeApp({
-  // your config
+  apiKey: "AIzaSyC-Wup0XbVJWq4NcjDRw1XXIy8GpcZQsBc",
+  authDomain: "chatscapedb.firebaseapp.com",
+  projectId: "chatscapedb",
+  storageBucket: "chatscapedb.appspot.com",
+  messagingSenderId: "332067358644",
+  appId: "1:332067358644:web:0b40c0587c818cf089d4e1"
 })
 
 const auth = firebase.auth();
@@ -25,7 +30,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>⚛️🔥💬</h1>
+        <h1>ChatScape</h1>
         <SignOut />
       </header>
 
@@ -47,7 +52,7 @@ function SignIn() {
   return (
     <>
       <button className="sign-in" onClick={signInWithGoogle}>Sign in with Google</button>
-      <p>Do not violate the community guidelines or you will be banned for life!</p>
+      <p>Do not violate the community guidelines</p>
     </>
   )
 
@@ -99,7 +104,7 @@ function ChatRoom() {
 
       <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="say something nice" />
 
-      <button type="submit" disabled={!formValue}>🕊️</button>
+      <button type="submit" disabled={!formValue}>➡</button>
 
     </form>
   </>)
